@@ -35,4 +35,7 @@ Windows 10 / Mac OS X / Linux
 26. In the newly created IntelliJ project create a maven RUN config file enter compile exec:java -Djava.library.path=/Absolute/path/Sirsasana/build/library -Dexec.mainClass=art.lookingup.sirsasana.SirsasanaApp in Commannd Line field (needs to be tested for new native library issues)
 27. Add an IntelliJ run configuration for generating the maven package. Create another Maven configuration and for the command just enter 'package'.
 28. Add an IntelliJ run configuration for running the application jar.  Replace any referenced absolute path here with the equivalent on your system. Make sure to have a top-level element selected on the left and then click on '+'.  Choose Jar Application.  Select the target/sirsasana-0.4.1-jar-with-dependencies.jar as the application jar.  For VM options enter: -Djava.library.path=/Users/tracyscott/Documents/GitHub/Sirsasana/build/library
-28. 
+
+Tips
+1. If you had previously used a different JDK with IntelliJ, remeber to pick JDK 17 while import the project using POM file
+2. In Windows if you cannot move files from Sirsasana\classpath\windows-amd64 to C:\Users\mister_kanth\Documents\Sirsasana\build\library suing command prompt then do it manually using file explorer
